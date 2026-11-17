@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="CampusMate is a student hub for study resources, academic timetables, campus announcements, Lost and Found, and student marketplace.">
+
+  <meta name="author" content="James Mwaura">
+
+  <title>CampusMate | James Mwaura</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+
+  <aside class="sidebar">
+
+    <div class="brand">
+
+      <div class="brand-icon">C</div>
+
+      <div>
+        <h2>CampusMate</h2>
+        <span>STUDENT HUB</span>
+      </div>
+
+    </div>
+
+    <p class="menu-label">MAIN MENU</p>
+
+    <nav>
+
+      <button class="nav-link active" data-page="dashboard">
+        ⌂ <span>Dashboard</span>
+      </button>
+
+      <button class="nav-link" data-page="resources">
+        ▤ <span>Study Resources</span>
+      </button>
+
+      <button class="nav-link" data-page="timetable">
+        ▦ <span>Timetable</span>
+      </button>
+
+      <button class="nav-link" data-page="announcements">
+        ◉ <span>Announcements</span>
+      </button>
+
+      <button class="nav-link" data-page="lost">
+        ⌕ <span>Lost & Found</span>
+      </button>
+
+      <button class="nav-link" data-page="marketplace">
+        ◇ <span>Marketplace</span>
+      </button>
+
+    </nav>
+
+    <p class="menu-label links-label">QUICK ACCESS</p>
+
+    <button class="nav-link" data-page="links">
+      ↗ <span>Useful Links</span>
+    </button>
+
+    <!-- DEVELOPER PROFILE -->
+
+    <div class="sidebar-bottom">
+
+      <div class="profile-avatar">J</div>
+
+      <div>
+        <strong>James Mwaura</strong>
+        <span>Founder & Developer</span>
+      </div>
+
+    </div>
+
+  </aside>
+
+
+  <!-- MAIN CONTENT -->
+
+  <main class="main-content">
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+      <div>
+        <p class="eyebrow">STUDENT WORKSPACE</p>
+        <h2 id="page-title">Dashboard</h2>
+      </div>
+
+      <div class="top-right">
+
+        <span class="status-dot"></span>
+
+        <span class="online-text">
+          Your hub is ready
+        </span>
+
+        <div class="top-avatar">S</div>
+
+      </div>
+
+    </header>
+
+
+    <!-- WELCOME SECTION -->
+
+    <section class="welcome">
+
+      <div>
+
+        <span class="welcome-tag">
+          WELCOME TO CAMPUSMATE
+        </span>
+
+        <h1>
+          Your campus life,<br>
+          <span>in one place.</span>
+        </h1>
+
+        <p>
+          Stay organised, discover resources and
+          make the most of student life.
+        </p>
+
+        <button class="primary-btn" data-go="resources">
+          Explore resources <span>→</span>
+        </button>
+
+      </div>
+
+      <div class="welcome-art">
+
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="art-core">CM</div>
+
+      </div>
+
+    </section>
+
+
+    <!-- STATISTICS -->
+
+    <section class="stats-grid">
+
+      <article class="stat-card">
+
+        <div class="stat-icon blue">▤</div>
+
+        <p>Study resources</p>
+
+        <h2>12</h2>
+
+        <span>Available materials</span>
+
+      </article>
+
+
+      <article class="stat-card">
+
+        <div class="stat-icon purple">▦</div>
+
+        <p>Today's classes</p>
+
+        <h2>04</h2>
+
+        <span>Sample schedule</span>
+
+      </article>
+
+
+      <article class="stat-card">
+
+        <div class="stat-icon orange">◉</div>
+
+        <p>Announcements</p>
+
+        <h2>03</h2>
+
+        <span>Latest updates</span>
+
+      </article>
+
+
+      <article class="stat-card">
+
+        <div class="stat-icon green">◇</div>
+
+        <p>Marketplace</p>
+
+        <h2>08</h2>
+
+        <span>Sample listings</span>
+
+      </article>
+
+    </section>
+
+
+    <!-- DASHBOARD CONTENT -->
+
+    <section class="content-grid">
+
+
+      <!-- STUDY RESOURCES -->
+
+      <article class="panel">
+
+        <div class="panel-heading">
+
+          <div>
+            <p class="eyebrow">KEEP LEARNING</p>
+            <h3>Study Resources</h3>
+          </div>
+
+          <button class="text-btn" data-go="resources">
+            View all →
+          </button>
+
+        </div>
+
+        <div id="resource-preview"></div>
+
+      </article>
+
+
+      <!-- ANNOUNCEMENTS -->
+
+      <article class="panel">
+
+        <div class="panel-heading">
+
+          <div>
+            <p class="eyebrow">STAY INFORMED</p>
+            <h3>Latest Announcements</h3>
+          </div>
+
+          <button class="text-btn" data-go="announcements">
+            View all →
+          </button>
+
+        </div>
+
+        <div id="announcement-preview"></div>
+
+      </article>
+
+    </section>
+
+
+    <!-- TIMETABLE PREVIEW -->
+
+    <section class="panel bottom-panel">
+
+      <div class="panel-heading">
+
+        <div>
+          <p class="eyebrow">YOUR ACADEMIC PLAN</p>
+          <h3>IT Students Timetable</h3>
+          <p>Group B-Year II BIT-Semester One</p>
+        </div>
+
+        <button class="text-btn" data-go="timetable">
+          Full timetable →
+        </button>
+
+      </div>
+
+      <div id="timetable-preview"></div>
+
+    </section>
+
+
+    <!-- ABOUT THE DEVELOPER -->
+
+    <section class="panel developer-section">
+
+      <div class="panel-heading">
+
+        <div>
+          <p class="eyebrow">THE PERSON BEHIND THE PLATFORM</p>
+          <h3>About the Developer</h3>
+        </div>
+
+        <div class="developer-badge">
+          FOUNDER
+        </div>
+
+      </div>
+
+
+      <div class="developer-profile">
+
+        <div class="developer-avatar">
+          JM
+        </div>
+
+        <div class="developer-details">
+
+          <h2>James Mwaura</h2>
+
+          <p class="developer-role">
+            Founder & Developer
+          </p>
+
+          <p class="developer-description">
+            CampusMate was created to bring useful
+            academic resources, student information
+            and campus services together in one
+            accessible platform.
+          </p>
+
+          <div class="developer-signature">
+            <span class="signature-line"></span>
+            <span>Creator of CampusMate</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- DYNAMIC CONTENT -->
+
+    <section
+      id="extra-content"
+      class="panel extra-panel"
+      hidden>
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+      <div>
+
+        <strong>CampusMate</strong>
+
+        <span>
+          Your campus. One platform.
+        </span>
+
+      </div>
+
+      <div class="footer-credit">
+
+        <span>
+          Designed & developed by
+        </span>
+
+        <strong>James Mwaura</strong>
+
+        <span>
+          Founder & Developer
+        </span>
+
+      </div>
+
+      <span class="copyright">
+        © 2026 CampusMate. All rights reserved.
+      </span>
+
+    </footer>
+
+  </main>
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
